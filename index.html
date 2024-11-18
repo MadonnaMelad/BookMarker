@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>BookMarker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container py-3 ">
+        <div class="d-flex justify-content-center align-items-center"><h1 class="text-center py-5 ">Bookmarker</h1>
+        </div>
+        <h2 class="h3 text-center br py-5"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+        <form>
+            <label><i class="fa-solid fa-book-bookmark p-2"></i>Site Name</label>
+            <input id="siteName" oninput="validationName()" class="form-control my-2" type="text" placeholder="Bookmark Name" required>
+            <label><i class="fa-solid fa-link p-2"></i>Site URL</label>
+            <input id="siteUrl" oninput="validationUrle()" class="form-control my-2" type="text" placeholder="Website URL" required>
+            <div class="d-flex py-3 justify-content-center align-items-center"><button onclick="addSite()" class="btn btn-danger px-5 my-2 d-flex ali" type="button">Submit</button>
+            </div>
+        </form>
+    </div>    
+    <div class="container br">
+       <table class="table text-center mt-3">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="demo">
+           
+        </tbody>
+       </table>
+    </div>
+   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
